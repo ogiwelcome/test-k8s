@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-dns
+spec:
+  dnsPolicy: ClusterFirst
+  containers:
+  - name: nginx-container
+    image: nginx:1.16
+
